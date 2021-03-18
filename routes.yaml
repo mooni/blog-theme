@@ -4,11 +4,19 @@ collections:
   /:
     permalink: /{slug}/
     template: index
-    filter: 'tag:-[hash-de,hash-fr]'
+    filter: 'tag:-[hash-de,hash-fr,hash-es]'
   /fr/:
     permalink: /fr/{slug}/
     template: index-fr
     filter: 'tag:hash-fr'
+  /es/:
+    permalink: /es/{slug}/
+    template: index-es
+    filter: 'tag:hash-es'
+  /de/:
+    permalink: /de/{slug}/
+    template: index-de
+    filter: 'tag:hash-de'
 
 taxonomies:
   tag: /tag/{slug}/
